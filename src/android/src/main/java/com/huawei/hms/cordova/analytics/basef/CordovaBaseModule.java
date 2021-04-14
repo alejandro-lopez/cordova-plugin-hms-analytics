@@ -13,30 +13,23 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */
+package com.huawei.hms.cordova.analytics.basef;
 
-'use strict';
+public abstract class CordovaBaseModule {
+    private final String reference;
 
-var fs = require('fs');
-
-var FSUtils = (function () {
-    var api = {};
-
-    api.exists = function (path) {
-        try {
-            return fs.existsSync(path)
-        } catch (err) {/*NOPE*/ }
-        return false;
+    public CordovaBaseModule() {
+        this.reference = this.getClass().getSimpleName();
     }
+    public void onDestroy(){}
+    public void onPause(boolean multitasking){}
+    public void onResume(boolean multitasking){}
+    public void onReset(){}
+    public void onStart(){}
+    public void onStop(){}
 
-    api.readFile = function (path, encoding) {
-        return fs.readFileSync(path, encoding);
+
+    public String getReference(){
+        return reference;
     }
-
-    api.writeFile = function (path, content) {
-        fs.writeFileSync(path, content);
-    }
-
-    return api;
-})();
-
-module.exports = FSUtils;
+}

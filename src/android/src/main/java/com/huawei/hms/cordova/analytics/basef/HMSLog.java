@@ -13,30 +13,14 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */
+package com.huawei.hms.cordova.analytics.basef;
 
-'use strict';
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
-var fs = require('fs');
-
-var FSUtils = (function () {
-    var api = {};
-
-    api.exists = function (path) {
-        try {
-            return fs.existsSync(path)
-        } catch (err) {/*NOPE*/ }
-        return false;
-    }
-
-    api.readFile = function (path, encoding) {
-        return fs.readFileSync(path, encoding);
-    }
-
-    api.writeFile = function (path, content) {
-        fs.writeFileSync(path, content);
-    }
-
-    return api;
-})();
-
-module.exports = FSUtils;
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface HMSLog {
+}
