@@ -1,56 +1,50 @@
 {
-    "name": "@hmscore/cordova-plugin-hms-analytics",
-    "description": "Cordova HMS Analytics Plugin",
-    "version": "5.1.0-301",
-    "main": "./www/index.js",
-    "types": "./types/index.d.ts",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/HMS-Core/hms-cordova-plugin.git",
-        "directory": "cordova-plugin-hms-analytics"
-    },
-    "bugs": "https://github.com/HMS-Core/hms-cordova-plugin/issues",
-    "homepage": "https://developer.huawei.com/consumer/en/doc/overview/HMS-Core-Plugin",
-    "license": "Apache-2.0",
-    "licenseFilename": "LICENCE",
-    "readmeFilename": "README.md",
-    "cordova": {
-        "id": "cordova-plugin-hms-analytics",
-        "platforms": [
-            "android",
-            "ios"
-        ]
-    },
-    "keywords": [
-        "cordova",
-        "ecosystem:cordova",
-        "cordova-android",
-        "cordova-ios",
-        "huawei-analytics",
-        "hms-analytics",
-        "analytics",
-        "huawei"
-    ],
-    "files": [
-        "hooks",
-        "ionic-native",
-        "src",
-        "types",
-        "www",
-        "LICENCE",
-        "package.json",
-        "plugin.xml",
-        "README.md"
-    ],
-    "dependencies": {
-        "@types/cordova": "0.0.34"
-    },
-    "devDependencies": {
-        "typescript": "3.9.5"
-    },
-    "scripts": {
-        "build:core": "node ./node_modules/typescript/bin/tsc",
-        "build": "npm run build:core",
-        "watch": "node ./node_modules/typescript/bin/tsc --watch"
-    }
+  "_from": "git+https://github.com/alejandro-lopez/cordova-plugin-hms-analytics.git",
+  "_id": "cordova-plugin-hms-analytics@4.0.3",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-hms-analytics",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/alejandro-lopez/cordova-plugin-hms-analytics",
+    "rawSpec": "https://github.com/alejandro-lopez/cordova-plugin-hms-analytics",
+    "saveSpec": "git+https://github.com/alejandro-lopez/cordova-plugin-hms-analytics.git",
+    "fetchSpec": "https://github.com/alejandro-lopez/cordova-plugin-hms-analytics.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/alejandro-lopez/cordova-plugin-hms-analytics.git#942c20e130d21332cdee0686e237f6992d2caef7",
+  "_spec": "https://github.com/alejandro-lopez/cordova-plugin-hms-analytics",
+  "_where": "C:\\SmartTracker_Huawei",
+  "author": "",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-hms-analytics",
+    "platforms": []
+  },
+  "deprecated": false,
+  "description": "Huawei Analytics Cordova Plugin",
+  "files": [
+    "hooks/**",
+    "resources/**",
+    "src/**",
+    "www/**",
+    "LICENCE",
+    "package.json",
+    "plugin.xml",
+    "README.md"
+  ],
+  "keywords": [
+    "cordova",
+    "huaweianalytics",
+    "hianalytics",
+    "ecosystem:cordova"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-hms-analytics",
+  "version": "4.0.3"
 }
